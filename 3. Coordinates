@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+struct point {
+    int x, y;
+};
+
+int main() {
+    point A, B, C;  // Declare three instances of the structure point
+    cout << "Enter coordinates of p1: ";
+    cin >> A.x >> A.y;
+    cout << "Enter coordinates of p2: ";
+    cin >> B.x >> B.y;
+    
+    C.x = A.x + B.x;  // Add x-coordinates
+    C.y = A.y + B.y;  // Add y-coordinates
+    
+    cout << "Addition of coordinates: ";
+    cout << C.x << "\n" << C.y << endl;
+    
+    return 0;
+}
